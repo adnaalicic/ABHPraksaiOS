@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44B0355D2969F9350C27C3E5 /* libPods-pokusaj3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D73230D8B67F6F16AE51147 /* libPods-pokusaj3.a */; };
 		6A3F3A2220AF8D3800FDC1A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3F3A2120AF8D3800FDC1A1 /* AppDelegate.m */; };
-		6A3F3A2520AF8D3800FDC1A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3F3A2420AF8D3800FDC1A1 /* ViewController.m */; };
+		6A3F3A2520AF8D3800FDC1A1 /* MovieListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3F3A2420AF8D3800FDC1A1 /* MovieListViewController.m */; };
 		6A3F3A2820AF8D3800FDC1A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A3F3A2620AF8D3800FDC1A1 /* Main.storyboard */; };
-		6A3F3A2B20AF8D3800FDC1A1 /* pokusaj3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A3F3A2920AF8D3800FDC1A1 /* pokusaj3.xcdatamodeld */; };
 		6A3F3A2D20AF8D3800FDC1A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A3F3A2C20AF8D3800FDC1A1 /* Assets.xcassets */; };
 		6A3F3A3020AF8D3800FDC1A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A3F3A2E20AF8D3800FDC1A1 /* LaunchScreen.storyboard */; };
 		6A3F3A3320AF8D3800FDC1A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3F3A3220AF8D3800FDC1A1 /* main.m */; };
 		6A3F3A3D20AF8D3800FDC1A1 /* pokusaj3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3F3A3C20AF8D3800FDC1A1 /* pokusaj3Tests.m */; };
 		6A3F3A4820AF8D3900FDC1A1 /* pokusaj3UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3F3A4720AF8D3900FDC1A1 /* pokusaj3UITests.m */; };
+		6A78B67420B820E3006AFDF1 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A78B67320B820E3006AFDF1 /* Movie.m */; };
+		6A9D666A20B1BC400025EEAD /* CustomCellCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9D666920B1BC400025EEAD /* CustomCellCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,10 +41,9 @@
 		6A3F3A1D20AF8D3800FDC1A1 /* pokusaj3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokusaj3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A3F3A2020AF8D3800FDC1A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6A3F3A2120AF8D3800FDC1A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6A3F3A2320AF8D3800FDC1A1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6A3F3A2420AF8D3800FDC1A1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6A3F3A2320AF8D3800FDC1A1 /* MovieListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieListViewController.h; sourceTree = "<group>"; };
+		6A3F3A2420AF8D3800FDC1A1 /* MovieListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieListViewController.m; sourceTree = "<group>"; };
 		6A3F3A2720AF8D3800FDC1A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6A3F3A2A20AF8D3800FDC1A1 /* pokusaj3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = pokusaj3.xcdatamodel; sourceTree = "<group>"; };
 		6A3F3A2C20AF8D3800FDC1A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A3F3A2F20AF8D3800FDC1A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A3F3A3120AF8D3800FDC1A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +54,13 @@
 		6A3F3A4320AF8D3900FDC1A1 /* pokusaj3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pokusaj3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A3F3A4720AF8D3900FDC1A1 /* pokusaj3UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pokusaj3UITests.m; sourceTree = "<group>"; };
 		6A3F3A4920AF8D3900FDC1A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A78B67220B820E3006AFDF1 /* Movie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		6A78B67320B820E3006AFDF1 /* Movie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		6A9D666820B1BC400025EEAD /* CustomCellCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCellCollectionViewCell.h; sourceTree = "<group>"; };
+		6A9D666920B1BC400025EEAD /* CustomCellCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCellCollectionViewCell.m; sourceTree = "<group>"; };
+		6FFF05B0DE3E7510128457EA /* Pods-pokusaj3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokusaj3.release.xcconfig"; path = "Pods/Target Support Files/Pods-pokusaj3/Pods-pokusaj3.release.xcconfig"; sourceTree = "<group>"; };
+		7D73230D8B67F6F16AE51147 /* libPods-pokusaj3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pokusaj3.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5844F65BC61865C19896307 /* Pods-pokusaj3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokusaj3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pokusaj3/Pods-pokusaj3.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44B0355D2969F9350C27C3E5 /* libPods-pokusaj3.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,8 +96,11 @@
 				6A3F3A3B20AF8D3800FDC1A1 /* pokusaj3Tests */,
 				6A3F3A4620AF8D3900FDC1A1 /* pokusaj3UITests */,
 				6A3F3A1E20AF8D3800FDC1A1 /* Products */,
+				FDCD1D57AB67461626016058 /* Pods */,
+				AE77719AC436A0F7438E1C7C /* Frameworks */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		6A3F3A1E20AF8D3800FDC1A1 /* Products */ = {
 			isa = PBXGroup;
@@ -103,16 +115,20 @@
 		6A3F3A1F20AF8D3800FDC1A1 /* pokusaj3 */ = {
 			isa = PBXGroup;
 			children = (
+				6AF5701820B4FE000084EF95 /* Supporting Files */,
 				6A3F3A2020AF8D3800FDC1A1 /* AppDelegate.h */,
 				6A3F3A2120AF8D3800FDC1A1 /* AppDelegate.m */,
-				6A3F3A2320AF8D3800FDC1A1 /* ViewController.h */,
-				6A3F3A2420AF8D3800FDC1A1 /* ViewController.m */,
+				6A3F3A2320AF8D3800FDC1A1 /* MovieListViewController.h */,
+				6A3F3A2420AF8D3800FDC1A1 /* MovieListViewController.m */,
 				6A3F3A2620AF8D3800FDC1A1 /* Main.storyboard */,
 				6A3F3A2C20AF8D3800FDC1A1 /* Assets.xcassets */,
 				6A3F3A2E20AF8D3800FDC1A1 /* LaunchScreen.storyboard */,
 				6A3F3A3120AF8D3800FDC1A1 /* Info.plist */,
 				6A3F3A3220AF8D3800FDC1A1 /* main.m */,
-				6A3F3A2920AF8D3800FDC1A1 /* pokusaj3.xcdatamodeld */,
+				6A9D666820B1BC400025EEAD /* CustomCellCollectionViewCell.h */,
+				6A9D666920B1BC400025EEAD /* CustomCellCollectionViewCell.m */,
+				6A78B67220B820E3006AFDF1 /* Movie.h */,
+				6A78B67320B820E3006AFDF1 /* Movie.m */,
 			);
 			path = pokusaj3;
 			sourceTree = "<group>";
@@ -135,6 +151,30 @@
 			path = pokusaj3UITests;
 			sourceTree = "<group>";
 		};
+		6AF5701820B4FE000084EF95 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE77719AC436A0F7438E1C7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D73230D8B67F6F16AE51147 /* libPods-pokusaj3.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDCD1D57AB67461626016058 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5844F65BC61865C19896307 /* Pods-pokusaj3.debug.xcconfig */,
+				6FFF05B0DE3E7510128457EA /* Pods-pokusaj3.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,6 +182,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A3F3A4C20AF8D3900FDC1A1 /* Build configuration list for PBXNativeTarget "pokusaj3" */;
 			buildPhases = (
+				85DE63E46AFEA805AC017D8F /* [CP] Check Pods Manifest.lock */,
 				6A3F3A1920AF8D3800FDC1A1 /* Sources */,
 				6A3F3A1A20AF8D3800FDC1A1 /* Frameworks */,
 				6A3F3A1B20AF8D3800FDC1A1 /* Resources */,
@@ -260,13 +301,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		85DE63E46AFEA805AC017D8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pokusaj3-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6A3F3A1920AF8D3800FDC1A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A3F3A2520AF8D3800FDC1A1 /* ViewController.m in Sources */,
-				6A3F3A2B20AF8D3800FDC1A1 /* pokusaj3.xcdatamodeld in Sources */,
+				6A3F3A2520AF8D3800FDC1A1 /* MovieListViewController.m in Sources */,
+				6A9D666A20B1BC400025EEAD /* CustomCellCollectionViewCell.m in Sources */,
+				6A78B67420B820E3006AFDF1 /* Movie.m in Sources */,
 				6A3F3A3320AF8D3800FDC1A1 /* main.m in Sources */,
 				6A3F3A2220AF8D3800FDC1A1 /* AppDelegate.m in Sources */,
 			);
@@ -435,10 +498,22 @@
 		};
 		6A3F3A4D20AF8D3900FDC1A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5844F65BC61865C19896307 /* Pods-pokusaj3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"/**",
+					"\"${PODS_ROOT}/Headers/Public/ISO8601DateFormatterValueTransformer\"/**",
+					"\"${PODS_ROOT}/Headers/Public/RKValueTransformers\"/**",
+					"\"${PODS_ROOT}/Headers/Public/RestKit\"/**",
+					"\"${PODS_ROOT}/Headers/Public/SOCKit\"/**",
+					"\"${PODS_ROOT}/Headers/Public/TransitionKit\"/**",
+					"\"${PODS_ROOT}/Headers/Public\"/**",
+				);
 				INFOPLIST_FILE = pokusaj3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,10 +526,22 @@
 		};
 		6A3F3A4E20AF8D3900FDC1A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FFF05B0DE3E7510128457EA /* Pods-pokusaj3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"/**",
+					"\"${PODS_ROOT}/Headers/Public/ISO8601DateFormatterValueTransformer\"/**",
+					"\"${PODS_ROOT}/Headers/Public/RKValueTransformers\"/**",
+					"\"${PODS_ROOT}/Headers/Public/RestKit\"/**",
+					"\"${PODS_ROOT}/Headers/Public/SOCKit\"/**",
+					"\"${PODS_ROOT}/Headers/Public/TransitionKit\"/**",
+					"\"${PODS_ROOT}/Headers/Public\"/**",
+				);
 				INFOPLIST_FILE = pokusaj3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -575,19 +662,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		6A3F3A2920AF8D3800FDC1A1 /* pokusaj3.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				6A3F3A2A20AF8D3800FDC1A1 /* pokusaj3.xcdatamodel */,
-			);
-			currentVersion = 6A3F3A2A20AF8D3800FDC1A1 /* pokusaj3.xcdatamodel */;
-			path = pokusaj3.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 6A3F3A1520AF8D3800FDC1A1 /* Project object */;
 }

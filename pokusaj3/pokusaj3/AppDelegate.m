@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import <RestKit/CoreData.h>
+#import <RestKit/RestKit.h>
+
 
 @interface AppDelegate ()
 
@@ -16,7 +19,20 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    RKObjectManager *manager = [RKObjectManager managerWithBaseURL:[NSURL URLWithString:@"http://api.themoviedb.org"]];
+    
+    
+//    AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://api.themoviedb.org"]];
+    
+    [RKObjectManager setSharedManager:manager];
+    
+    //printf("usao u ovu fju");
+//    NSError *error;
+//    NSString *url_string = [NSString stringWithFormat: @"http://api.themoviedb.org/3/search/movie?query=hard&api_key=fe91a31c2346455531b30cddefc2105c"];
+//    NSData *data = [NSData dataWithContentsOfURL: [NSURL URLWithString:url_string]];
+//    NSMutableArray *json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+    //NSLog(@"json: %@", json);
     return YES;
 }
 
