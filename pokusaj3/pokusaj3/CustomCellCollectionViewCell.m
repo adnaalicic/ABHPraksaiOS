@@ -10,32 +10,38 @@
 
 @implementation CustomCellCollectionViewCell
 
-@synthesize titleLabel;
-@synthesize posterImageView;
-
+{
+    CAGradientLayer *gradientMask;
+}
 
 -(void)setupWithMovie:(Movie *)movie{
+    //setting labels
     self.titleLabel.text = movie.title;
-    self.posterImageView.image = [UIImage imageNamed:@"Bitmap"];
-    NSLog(@"pozvalo se");
+    self.titleLabel.numberOfLines = 4;
+    [self.titleLabel sizeToFit];
+    self.releaseDateLabel.text = movie.releaseDate;
+    self.rateLabel.text = movie.voteAverageString;
+    NSData *data = [NSData dataWithContentsOfURL:movie.fullPosterPath];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.posterImageView setImage:[UIImage imageWithData:data]];
+    });
     
-    /*
-     NSString *pictureName = [self.pictures objectAtIndex:indexPath.row];
-     cell.posterImage.image = [UIImage imageNamed:pictureName];
-     [cell.posterImage sizeToFit];
-     //cell.posterImage.frame = cell.posterImage.bounds;
-     
-     CAGradientLayer *gradientMask = [CAGradientLayer layer];
-     gradientMask.frame = cell.frame;
-     gradientMask.locations = @[@0.5, @1];
-     
-     gradientMask.colors = @[(id)[UIColor clearColor].CGColor,
-     (id)[UIColor whiteColor].CGColor];
-     
-     //cell.posterImage.layer.mask = gradientMask;
-     
-     [cell.posterImage.layer insertSublayer:gradientMask atIndex:1];
-     */
+    [self setGradient];
+    
+
+
+}
+
+-(void) setGradient {
+    if(gradientMask == nil){
+        gradientMask = [CAGradientLayer layer];
+        gradientMask.frame = self.bounds;
+        gradientMask.locations = @[@0.02, @0.8];
+        gradientMask.colors = @[(id)[UIColor clearColor].CGColor,
+                                (id)[UIColor blackColor].CGColor];
+        //self.backgroundColor = [UIColor clearColor];
+        [self.posterImageView.layer insertSublayer:gradientMask atIndex:0];
+    }
 }
 
 @end

@@ -18,4 +18,6 @@
 @property (nonatomic) NSInteger identity;
 @property (nonatomic) float voteAverage;
 
+@property (nonatomic, getter=fullPosterPath) NSURL *fullPosterPath;
+@property (nonatomic, getter=voteAverageString) NSString *stringFormatOfVoteAverage;
 @end

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MovieListViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface MovieListViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegateFlowLayout,UITextFieldDelegate>
 
 @property (weak,nonatomic) IBOutlet UIBarButtonItem *barButton;
 
