@@ -7,6 +7,8 @@
 //
 
 #import "SearchViewCell.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+
 
 @implementation SearchViewCell
 
@@ -24,11 +26,8 @@
     
     self.titleLabel.text = movie.title;
     self.voteAverageLabel.text = movie.stringFormatOfVoteAverage;
-    self.yearOfReleaseLabel.text = movie.releaseDate;
-    NSData *data = [NSData dataWithContentsOfURL:movie.fullPosterPath];
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self.posterImageView setImage:[UIImage imageWithData:data]];
-    });
+    self.yearOfReleaseLabel.text = movie.getDate;
+    [self.posterImageView sd_setImageWithURL:movie.fullPosterPath placeholderImage:nil];
 }
 
 @end

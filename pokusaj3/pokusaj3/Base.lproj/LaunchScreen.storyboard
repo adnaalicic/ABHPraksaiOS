@@ -22,16 +22,23 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fill 205" translatesAutoresizingMaskIntoConstraints="NO" id="FkI-lN-zsu">
-                                <rect key="frame" x="147" y="245" width="100" height="82"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fill 205" translatesAutoresizingMaskIntoConstraints="NO" id="FkI-lN-zsu">
+                                <rect key="frame" x="147" y="245" width="100" height="83"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="POPULAR MOVIES" translatesAutoresizingMaskIntoConstraints="NO" id="5Ay-zJ-TxV">
-                                <rect key="frame" x="93" y="349" width="189" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="POPULAR MOVIES" translatesAutoresizingMaskIntoConstraints="NO" id="5Ay-zJ-TxV">
+                                <rect key="frame" x="93" y="350" width="189" height="55"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5Ay-zJ-TxV" firstAttribute="top" secondItem="FkI-lN-zsu" secondAttribute="bottom" constant="22" id="06J-fh-DiQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Ay-zJ-TxV" secondAttribute="trailing" constant="93" id="8ij-GG-s2t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5Ay-zJ-TxV" secondAttribute="bottom" constant="262" id="Oqu-Vu-fhX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FkI-lN-zsu" secondAttribute="trailing" constant="128" id="aWL-nG-Vg7"/>
+                            <constraint firstItem="FkI-lN-zsu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="225" id="bmW-Gs-Pcv"/>
+                            <constraint firstItem="5Ay-zJ-TxV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="yPf-3g-hf9"/>
+                            <constraint firstItem="FkI-lN-zsu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="147" id="zdp-ak-jkc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
