@@ -28,5 +28,5 @@
 @property (nonatomic, strong) NSString *oneGenre;
 - (NSURL *)fullPosterPathForCollection;
 -(NSString *)getDate;
-
+-(MovieDetails *)setUpWithDictionary:(NSDictionary *)dictionary;
 @end

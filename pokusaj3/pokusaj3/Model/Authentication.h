@@ -12,4 +12,5 @@
 @property (strong, nonatomic) NSString *success;
 @property (strong, nonatomic) NSString *expiresAt;
 @property (strong, nonatomic) NSString *requestToken;
+
 @end

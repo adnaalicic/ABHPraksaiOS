@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import <RestKit/CoreData.h>
 #import <RestKit/RestKit.h>
+@import Firebase;
 
 
 @interface AppDelegate ()
@@ -33,6 +34,7 @@
 //    NSData *data = [NSData dataWithContentsOfURL: [NSURL URLWithString:url_string]];
 //    NSMutableArray *json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
     //NSLog(@"json: %@", json);
+    [FIRApp configure];
     return YES;
 }
 

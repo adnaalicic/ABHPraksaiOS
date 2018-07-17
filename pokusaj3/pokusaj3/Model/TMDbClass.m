@@ -88,7 +88,7 @@
     NSIndexSet *statusCodes = RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful); // Anything in 2xx
     RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:mapping method:RKRequestMethodGET pathPattern:self.pathPattern keyPath:self.keyPath statusCodes:statusCodes];
     
-    
+
     [[RKObjectManager sharedManager] addResponseDescriptor:responseDescriptor];
     
     //NSDictionary *queryParams = [NSDictionary dictionaryWithObjectsAndKeys:self.query, @"query", self.apiKey, @"api_key", nil];
@@ -423,7 +423,6 @@
     
     [[RKObjectManager sharedManager] addResponseDescriptor:responseDescriptor];
     
-    //NSDictionary *queryParams = [NSDictionary dictionaryWithObjectsAndKeys:self.query, @"query", self.apiKey, @"api_key", nil];
     NSDictionary *queryParams = [NSDictionary dictionaryWithObjectsAndKeys: self.apiKey, @"api_key", nil];
     
     
@@ -435,16 +434,16 @@
         
     }];
 }
--(RKObjectMapping *) mappingForAuthenticationLogin {
-    RKObjectMapping *mapping = [RKObjectMapping mappingForClass:[Authentication class]];
+-(RKObjectMapping *) mappingForSession{
+    RKObjectMapping *mapping = [RKObjectMapping mappingForClass:[Session class]];
     [mapping addAttributeMappingsFromDictionary:@{@"success" : @"success",
-                                                  @"request_token" : @"requestToken",
+                                                  @"request_token" : @"sessionId",
                                                   }];
     return mapping;
 }
--(void) getTokenWithUsername:(NSString *)username andPassword:(NSString *)password withSuccess:(void (^)(NSArray *array))completionHandler{
+-(void) getSession:(NSString *)token andUsername:(NSString *)username andPassword:(NSString *)password withSuccess:(void (^)(NSArray *array))completionHandler{
     
-    self.pathPattern = @"/3/authentication/token/new";
+    self.pathPattern = @"/3/authentication/token/validate_with_login";
     
     [self setupAPIandKeyPath];
     RKObjectMapping *mapping = [self mappingForAuthentication];
@@ -456,9 +455,7 @@
     [[RKObjectManager sharedManager] addResponseDescriptor:responseDescriptor];
     
     //NSDictionary *queryParams = [NSDictionary dictionaryWithObjectsAndKeys:self.query, @"query", self.apiKey, @"api_key", nil];
-    NSDictionary *queryParams = [NSDictionary dictionaryWithObjectsAndKeys: self.apiKey, @"api_key", nil];
-    
-    
+    NSDictionary *queryParams = [NSDictionary dictionaryWithObjectsAndKeys: self.apiKey, @"api_key", username, @"username", password, @"password",token, @"request_token", nil];
     
     [[RKObjectManager sharedManager] getObjectsAtPath:self.pathPattern parameters:queryParams success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
         completionHandler(mappingResult.array);
@@ -467,4 +464,45 @@
         
     }];
 }
+
+-(RKObjectMapping *) mappingForRate{
+    RKObjectMapping *mapping = [RKObjectMapping mappingForClass:[Rate class]];
+    [mapping addAttributeMappingsFromDictionary:@{@"value" : @"value",
+                                                  }];
+    return mapping;
+}
+-(void) postRating:(NSString *)movieId andRate:(Rate *)rate andSessionId:(NSString *)sessionId withSuccess:(void (^)(NSArray *array))completionHandler{
+    //RKObjectManager *manager = [RKObjectManager managerWithBaseURL:[NSURL ]]
+
+    self.pathPattern = [NSString stringWithFormat: @"/3/movie/%@",movieId];
+    [self setupAPIandKeyPath];
+    RKObjectMapping *responseMapping = [RKObjectMapping mappingForClass:[Rate class]];
+
+    RKObjectMapping *mapping = [self mappingForRate];
+    NSIndexSet *statusCodes = RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful); // Anything in 2xx
+    
+    RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:mapping method:RKRequestMethodPOST pathPattern:self.pathPattern keyPath:nil statusCodes:statusCodes];
+    
+    
+    RKRequestDescriptor *requestDescriptor =[RKRequestDescriptor requestDescriptorWithMapping:mapping objectClass:[Rate class] rootKeyPath:nil method:RKRequestMethodPOST];
+    
+    [[RKObjectManager sharedManager] addResponseDescriptor:responseDescriptor];
+    [[RKObjectManager sharedManager] addRequestDescriptor:requestDescriptor];
+
+    
+    //NSDictionary *queryParams = [NSDictionary dictionaryWithObjectsAndKeys:self.query, @"query", self.apiKey, @"api_key", nil];
+    NSDictionary *queryParams = [NSDictionary dictionaryWithObjectsAndKeys: self.apiKey, @"api_key", sessionId, @"session_id", nil];
+    
+   
+    [[RKObjectManager sharedManager] postObject:rate path:self.pathPattern parameters:queryParams success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+        
+    } failure:^(RKObjectRequestOperation *operation, NSError *error) {
+        
+    }];
+    
+    
+    
+
+}
+
 @end

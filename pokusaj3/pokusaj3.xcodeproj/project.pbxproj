@@ -18,6 +18,7 @@
 		6A3F3A4820AF8D3900FDC1A1 /* pokusaj3UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3F3A4720AF8D3900FDC1A1 /* pokusaj3UITests.m */; };
 		6A78B67420B820E3006AFDF1 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A78B67320B820E3006AFDF1 /* Movie.m */; };
 		6A9D666A20B1BC400025EEAD /* CustomCellCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9D666920B1BC400025EEAD /* CustomCellCollectionViewCell.m */; };
+		6AB5594920F85B1200B98289 /* SuccessfulPaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB5594820F85B1200B98289 /* SuccessfulPaymentViewController.m */; };
 		6AC7126120C5DCC500A7992D /* MovieDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC7126020C5DCC500A7992D /* MovieDetailTableViewController.m */; };
 		6AC7126E20C69C1900A7992D /* MovieDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC7126D20C69C1900A7992D /* MovieDetails.m */; };
 		6AC7127120C960EE00A7992D /* Genre.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC7127020C960EE00A7992D /* Genre.m */; };
@@ -57,6 +58,47 @@
 		6ACFD13520E3A4B000F32255 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFD13420E3A4B000F32255 /* LoginViewController.m */; };
 		6ACFD13820E3A73200F32255 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFD13720E3A73100F32255 /* User.m */; };
 		6ACFD13B20E3C24100F32255 /* Authentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFD13A20E3C24100F32255 /* Authentication.m */; };
+		6ACFD13E20E511B000F32255 /* Rate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFD13D20E511B000F32255 /* Rate.m */; };
+		6ACFD14120E51B6000F32255 /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFD14020E51B6000F32255 /* Session.m */; };
+		6ACFD14720E64EF500F32255 /* CinemaMovieTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFD14620E64EF500F32255 /* CinemaMovieTableViewController.m */; };
+		6ACFD14B20E65A5A00F32255 /* ButtonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFD14920E65A5A00F32255 /* ButtonTableViewCell.m */; };
+		6ACFD14C20E65A5A00F32255 /* ButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ACFD14A20E65A5A00F32255 /* ButtonTableViewCell.xib */; };
+		6AE2C74120F2C66300B3A359 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AE2C74020F2C66200B3A359 /* GoogleService-Info.plist */; };
+		6AE2C74220F2C66300B3A359 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AE2C74020F2C66200B3A359 /* GoogleService-Info.plist */; };
+		6AE2C74320F2C66300B3A359 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AE2C74020F2C66200B3A359 /* GoogleService-Info.plist */; };
+		6AE2C74620F40BDB00B3A359 /* CinemaListOfMoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE2C74520F40BDB00B3A359 /* CinemaListOfMoviesViewController.m */; };
+		6AE2C74720F40BDB00B3A359 /* CinemaListOfMoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE2C74520F40BDB00B3A359 /* CinemaListOfMoviesViewController.m */; };
+		6AE2C74820F40BDB00B3A359 /* CinemaListOfMoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE2C74520F40BDB00B3A359 /* CinemaListOfMoviesViewController.m */; };
+		6AE2C74C20F40C5300B3A359 /* CinemaMoviesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE2C74A20F40C5300B3A359 /* CinemaMoviesCollectionViewCell.m */; };
+		6AE2C74D20F40C5300B3A359 /* CinemaMoviesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE2C74A20F40C5300B3A359 /* CinemaMoviesCollectionViewCell.m */; };
+		6AE2C74E20F40C5300B3A359 /* CinemaMoviesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE2C74A20F40C5300B3A359 /* CinemaMoviesCollectionViewCell.m */; };
+		6AE2C74F20F40C5300B3A359 /* CinemaMoviesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AE2C74B20F40C5300B3A359 /* CinemaMoviesCollectionViewCell.xib */; };
+		6AE2C75020F40C5300B3A359 /* CinemaMoviesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AE2C74B20F40C5300B3A359 /* CinemaMoviesCollectionViewCell.xib */; };
+		6AE2C75120F40C5300B3A359 /* CinemaMoviesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AE2C74B20F40C5300B3A359 /* CinemaMoviesCollectionViewCell.xib */; };
+		6AE2C75420F446DF00B3A359 /* PaymentInputsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE2C75320F446DF00B3A359 /* PaymentInputsViewController.m */; };
+		6AE2C75520F446DF00B3A359 /* PaymentInputsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE2C75320F446DF00B3A359 /* PaymentInputsViewController.m */; };
+		6AE2C75620F446DF00B3A359 /* PaymentInputsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE2C75320F446DF00B3A359 /* PaymentInputsViewController.m */; };
+		6AE2C75A20F4CE0200B3A359 /* ChooseTimeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE2C75820F4CE0200B3A359 /* ChooseTimeTableViewCell.m */; };
+		6AE2C75B20F4CE0200B3A359 /* ChooseTimeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE2C75820F4CE0200B3A359 /* ChooseTimeTableViewCell.m */; };
+		6AE2C75C20F4CE0200B3A359 /* ChooseTimeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE2C75820F4CE0200B3A359 /* ChooseTimeTableViewCell.m */; };
+		6AE2C75D20F4CE0200B3A359 /* ChooseTimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AE2C75920F4CE0200B3A359 /* ChooseTimeTableViewCell.xib */; };
+		6AE2C75E20F4CE0200B3A359 /* ChooseTimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AE2C75920F4CE0200B3A359 /* ChooseTimeTableViewCell.xib */; };
+		6AE2C75F20F4CE0200B3A359 /* ChooseTimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AE2C75920F4CE0200B3A359 /* ChooseTimeTableViewCell.xib */; };
+		6AE2C76220F4EEAB00B3A359 /* CinemaSeatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE2C76120F4EEAB00B3A359 /* CinemaSeatsViewController.m */; };
+		6AE2C76320F4EEAB00B3A359 /* CinemaSeatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE2C76120F4EEAB00B3A359 /* CinemaSeatsViewController.m */; };
+		6AE2C76420F4EEAB00B3A359 /* CinemaSeatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE2C76120F4EEAB00B3A359 /* CinemaSeatsViewController.m */; };
+		6AE2C76820F4F14E00B3A359 /* CircleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE2C76620F4F14E00B3A359 /* CircleCollectionViewCell.m */; };
+		6AE2C76920F4F14E00B3A359 /* CircleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE2C76620F4F14E00B3A359 /* CircleCollectionViewCell.m */; };
+		6AE2C76A20F4F14E00B3A359 /* CircleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE2C76620F4F14E00B3A359 /* CircleCollectionViewCell.m */; };
+		6AE2C76B20F4F14E00B3A359 /* CircleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AE2C76720F4F14E00B3A359 /* CircleCollectionViewCell.xib */; };
+		6AE2C76C20F4F14E00B3A359 /* CircleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AE2C76720F4F14E00B3A359 /* CircleCollectionViewCell.xib */; };
+		6AE2C76D20F4F14E00B3A359 /* CircleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AE2C76720F4F14E00B3A359 /* CircleCollectionViewCell.xib */; };
+		6AE2C77620F8190100B3A359 /* ButtonBookNowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE2C77420F8190100B3A359 /* ButtonBookNowTableViewCell.m */; };
+		6AE2C77720F8190100B3A359 /* ButtonBookNowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE2C77420F8190100B3A359 /* ButtonBookNowTableViewCell.m */; };
+		6AE2C77820F8190100B3A359 /* ButtonBookNowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE2C77420F8190100B3A359 /* ButtonBookNowTableViewCell.m */; };
+		6AE2C77920F8190100B3A359 /* ButtonBookNowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AE2C77520F8190100B3A359 /* ButtonBookNowTableViewCell.xib */; };
+		6AE2C77A20F8190100B3A359 /* ButtonBookNowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AE2C77520F8190100B3A359 /* ButtonBookNowTableViewCell.xib */; };
+		6AE2C77B20F8190100B3A359 /* ButtonBookNowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AE2C77520F8190100B3A359 /* ButtonBookNowTableViewCell.xib */; };
 		6AE4535820C4B17D00E50641 /* VideoMovieDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE4535620C4B17D00E50641 /* VideoMovieDetailCell.m */; };
 		6AE4535920C4B17D00E50641 /* VideoMovieDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AE4535720C4B17D00E50641 /* VideoMovieDetailCell.xib */; };
 		6AE4535D20C4B1EA00E50641 /* BasicMovieDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE4535B20C4B1EA00E50641 /* BasicMovieDetailCell.m */; };
@@ -105,6 +147,8 @@
 		6A78B67320B820E3006AFDF1 /* Movie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
 		6A9D666820B1BC400025EEAD /* CustomCellCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCellCollectionViewCell.h; sourceTree = "<group>"; };
 		6A9D666920B1BC400025EEAD /* CustomCellCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCellCollectionViewCell.m; sourceTree = "<group>"; };
+		6AB5594720F85B1200B98289 /* SuccessfulPaymentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuccessfulPaymentViewController.h; sourceTree = "<group>"; };
+		6AB5594820F85B1200B98289 /* SuccessfulPaymentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuccessfulPaymentViewController.m; sourceTree = "<group>"; };
 		6AC7125F20C5DCC500A7992D /* MovieDetailTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieDetailTableViewController.h; sourceTree = "<group>"; };
 		6AC7126020C5DCC500A7992D /* MovieDetailTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieDetailTableViewController.m; sourceTree = "<group>"; };
 		6AC7126C20C69C1900A7992D /* MovieDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieDetails.h; sourceTree = "<group>"; };
@@ -176,6 +220,34 @@
 		6ACFD13720E3A73100F32255 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		6ACFD13920E3C24100F32255 /* Authentication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Authentication.h; sourceTree = "<group>"; };
 		6ACFD13A20E3C24100F32255 /* Authentication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Authentication.m; sourceTree = "<group>"; };
+		6ACFD13C20E511B000F32255 /* Rate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rate.h; sourceTree = "<group>"; };
+		6ACFD13D20E511B000F32255 /* Rate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rate.m; sourceTree = "<group>"; };
+		6ACFD13F20E51B6000F32255 /* Session.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Session.h; sourceTree = "<group>"; };
+		6ACFD14020E51B6000F32255 /* Session.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Session.m; sourceTree = "<group>"; };
+		6ACFD14520E64EF500F32255 /* CinemaMovieTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CinemaMovieTableViewController.h; sourceTree = "<group>"; };
+		6ACFD14620E64EF500F32255 /* CinemaMovieTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CinemaMovieTableViewController.m; sourceTree = "<group>"; };
+		6ACFD14820E65A5A00F32255 /* ButtonTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonTableViewCell.h; sourceTree = "<group>"; };
+		6ACFD14920E65A5A00F32255 /* ButtonTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonTableViewCell.m; sourceTree = "<group>"; };
+		6ACFD14A20E65A5A00F32255 /* ButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonTableViewCell.xib; sourceTree = "<group>"; };
+		6AE2C74020F2C66200B3A359 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6AE2C74420F40BDB00B3A359 /* CinemaListOfMoviesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CinemaListOfMoviesViewController.h; sourceTree = "<group>"; };
+		6AE2C74520F40BDB00B3A359 /* CinemaListOfMoviesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CinemaListOfMoviesViewController.m; sourceTree = "<group>"; };
+		6AE2C74920F40C5300B3A359 /* CinemaMoviesCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CinemaMoviesCollectionViewCell.h; sourceTree = "<group>"; };
+		6AE2C74A20F40C5300B3A359 /* CinemaMoviesCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CinemaMoviesCollectionViewCell.m; sourceTree = "<group>"; };
+		6AE2C74B20F40C5300B3A359 /* CinemaMoviesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CinemaMoviesCollectionViewCell.xib; sourceTree = "<group>"; };
+		6AE2C75220F446DF00B3A359 /* PaymentInputsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentInputsViewController.h; sourceTree = "<group>"; };
+		6AE2C75320F446DF00B3A359 /* PaymentInputsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentInputsViewController.m; sourceTree = "<group>"; };
+		6AE2C75720F4CE0200B3A359 /* ChooseTimeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChooseTimeTableViewCell.h; sourceTree = "<group>"; };
+		6AE2C75820F4CE0200B3A359 /* ChooseTimeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChooseTimeTableViewCell.m; sourceTree = "<group>"; };
+		6AE2C75920F4CE0200B3A359 /* ChooseTimeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseTimeTableViewCell.xib; sourceTree = "<group>"; };
+		6AE2C76020F4EEAB00B3A359 /* CinemaSeatsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CinemaSeatsViewController.h; sourceTree = "<group>"; };
+		6AE2C76120F4EEAB00B3A359 /* CinemaSeatsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CinemaSeatsViewController.m; sourceTree = "<group>"; };
+		6AE2C76520F4F14E00B3A359 /* CircleCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleCollectionViewCell.h; sourceTree = "<group>"; };
+		6AE2C76620F4F14E00B3A359 /* CircleCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleCollectionViewCell.m; sourceTree = "<group>"; };
+		6AE2C76720F4F14E00B3A359 /* CircleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircleCollectionViewCell.xib; sourceTree = "<group>"; };
+		6AE2C77320F8190100B3A359 /* ButtonBookNowTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonBookNowTableViewCell.h; sourceTree = "<group>"; };
+		6AE2C77420F8190100B3A359 /* ButtonBookNowTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonBookNowTableViewCell.m; sourceTree = "<group>"; };
+		6AE2C77520F8190100B3A359 /* ButtonBookNowTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonBookNowTableViewCell.xib; sourceTree = "<group>"; };
 		6AE4535520C4B17D00E50641 /* VideoMovieDetailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoMovieDetailCell.h; sourceTree = "<group>"; };
 		6AE4535620C4B17D00E50641 /* VideoMovieDetailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoMovieDetailCell.m; sourceTree = "<group>"; };
 		6AE4535720C4B17D00E50641 /* VideoMovieDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoMovieDetailCell.xib; sourceTree = "<group>"; };
@@ -254,6 +326,7 @@
 				6A3F3A2620AF8D3800FDC1A1 /* Main.storyboard */,
 				6A3F3A2E20AF8D3800FDC1A1 /* LaunchScreen.storyboard */,
 				6A3F3A2C20AF8D3800FDC1A1 /* Assets.xcassets */,
+				6AE2C74020F2C66200B3A359 /* GoogleService-Info.plist */,
 				6A3F3A3120AF8D3800FDC1A1 /* Info.plist */,
 				6A3F3A3220AF8D3800FDC1A1 /* main.m */,
 			);
@@ -319,6 +392,16 @@
 				6ACFD13120E3977B00F32255 /* VideoViewController.m */,
 				6ACFD13320E3A4B000F32255 /* LoginViewController.h */,
 				6ACFD13420E3A4B000F32255 /* LoginViewController.m */,
+				6ACFD14520E64EF500F32255 /* CinemaMovieTableViewController.h */,
+				6ACFD14620E64EF500F32255 /* CinemaMovieTableViewController.m */,
+				6AE2C74420F40BDB00B3A359 /* CinemaListOfMoviesViewController.h */,
+				6AE2C74520F40BDB00B3A359 /* CinemaListOfMoviesViewController.m */,
+				6AE2C75220F446DF00B3A359 /* PaymentInputsViewController.h */,
+				6AE2C75320F446DF00B3A359 /* PaymentInputsViewController.m */,
+				6AE2C76020F4EEAB00B3A359 /* CinemaSeatsViewController.h */,
+				6AE2C76120F4EEAB00B3A359 /* CinemaSeatsViewController.m */,
+				6AB5594720F85B1200B98289 /* SuccessfulPaymentViewController.h */,
+				6AB5594820F85B1200B98289 /* SuccessfulPaymentViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -360,6 +443,21 @@
 				6AC712C020D103F900A7992D /* ActorsMovieCollectionViewCell.xib */,
 				6ACFD12A20E3107900F32255 /* GalleryHeaderCollectionReusableView.h */,
 				6ACFD12B20E3107900F32255 /* GalleryHeaderCollectionReusableView.m */,
+				6ACFD14820E65A5A00F32255 /* ButtonTableViewCell.h */,
+				6ACFD14920E65A5A00F32255 /* ButtonTableViewCell.m */,
+				6ACFD14A20E65A5A00F32255 /* ButtonTableViewCell.xib */,
+				6AE2C74920F40C5300B3A359 /* CinemaMoviesCollectionViewCell.h */,
+				6AE2C74A20F40C5300B3A359 /* CinemaMoviesCollectionViewCell.m */,
+				6AE2C74B20F40C5300B3A359 /* CinemaMoviesCollectionViewCell.xib */,
+				6AE2C75720F4CE0200B3A359 /* ChooseTimeTableViewCell.h */,
+				6AE2C75820F4CE0200B3A359 /* ChooseTimeTableViewCell.m */,
+				6AE2C75920F4CE0200B3A359 /* ChooseTimeTableViewCell.xib */,
+				6AE2C76520F4F14E00B3A359 /* CircleCollectionViewCell.h */,
+				6AE2C76620F4F14E00B3A359 /* CircleCollectionViewCell.m */,
+				6AE2C76720F4F14E00B3A359 /* CircleCollectionViewCell.xib */,
+				6AE2C77320F8190100B3A359 /* ButtonBookNowTableViewCell.h */,
+				6AE2C77420F8190100B3A359 /* ButtonBookNowTableViewCell.m */,
+				6AE2C77520F8190100B3A359 /* ButtonBookNowTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -393,6 +491,10 @@
 				6ACFD13720E3A73100F32255 /* User.m */,
 				6ACFD13920E3C24100F32255 /* Authentication.h */,
 				6ACFD13A20E3C24100F32255 /* Authentication.m */,
+				6ACFD13C20E511B000F32255 /* Rate.h */,
+				6ACFD13D20E511B000F32255 /* Rate.m */,
+				6ACFD13F20E51B6000F32255 /* Session.h */,
+				6ACFD14020E51B6000F32255 /* Session.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -521,15 +623,21 @@
 			files = (
 				6AF2C66320BEBCA2003C85CA /* SearchViewCell.xib in Resources */,
 				6A3F3A3020AF8D3800FDC1A1 /* LaunchScreen.storyboard in Resources */,
+				6AE2C74F20F40C5300B3A359 /* CinemaMoviesCollectionViewCell.xib in Resources */,
+				6AE2C74120F2C66300B3A359 /* GoogleService-Info.plist in Resources */,
 				6AC7129C20CF361800A7992D /* OneReviewTableViewCell.xib in Resources */,
+				6ACFD14C20E65A5A00F32255 /* ButtonTableViewCell.xib in Resources */,
+				6AE2C76B20F4F14E00B3A359 /* CircleCollectionViewCell.xib in Resources */,
 				6AC7128520CAB5F800A7992D /* PosterInImageGalleryCollectionViewCell.xib in Resources */,
 				6AE4535E20C4B1EA00E50641 /* BasicMovieDetailCell.xib in Resources */,
 				6AC7128F20CABAB400A7992D /* CollectionTableViewCell.xib in Resources */,
 				6AE4535920C4B17D00E50641 /* VideoMovieDetailCell.xib in Resources */,
 				6AC712C220D103F900A7992D /* ActorsMovieCollectionViewCell.xib in Resources */,
+				6AE2C75D20F4CE0200B3A359 /* ChooseTimeTableViewCell.xib in Resources */,
 				6A3F3A2D20AF8D3800FDC1A1 /* Assets.xcassets in Resources */,
 				6AC712A620CF393500A7992D /* ActorDetailsTableViewCell.xib in Resources */,
 				6A3F3A2820AF8D3800FDC1A1 /* Main.storyboard in Resources */,
+				6AE2C77920F8190100B3A359 /* ButtonBookNowTableViewCell.xib in Resources */,
 				6AC7128A20CAB6F500A7992D /* ActorCollectionViewCell.xib in Resources */,
 				6AC712B320CF39EC00A7992D /* MovieCollectionViewCell.xib in Resources */,
 			);
@@ -539,6 +647,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AE2C75020F40C5300B3A359 /* CinemaMoviesCollectionViewCell.xib in Resources */,
+				6AE2C74220F2C66300B3A359 /* GoogleService-Info.plist in Resources */,
+				6AE2C76C20F4F14E00B3A359 /* CircleCollectionViewCell.xib in Resources */,
+				6AE2C77A20F8190100B3A359 /* ButtonBookNowTableViewCell.xib in Resources */,
+				6AE2C75E20F4CE0200B3A359 /* ChooseTimeTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,6 +659,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AE2C75120F40C5300B3A359 /* CinemaMoviesCollectionViewCell.xib in Resources */,
+				6AE2C74320F2C66300B3A359 /* GoogleService-Info.plist in Resources */,
+				6AE2C76D20F4F14E00B3A359 /* CircleCollectionViewCell.xib in Resources */,
+				6AE2C77B20F8190100B3A359 /* ButtonBookNowTableViewCell.xib in Resources */,
+				6AE2C75F20F4CE0200B3A359 /* ChooseTimeTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,10 +695,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-pokusaj3/Pods-pokusaj3-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/gRPC/gRPCCertificates.bundle",
 				"${PODS_ROOT}/youtube-ios-player-helper/youtube-ios-player-helper/Assets.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -599,11 +719,17 @@
 				6AC712A520CF393500A7992D /* ActorDetailsTableViewCell.m in Sources */,
 				6AF2C66620BFF80A003C85CA /* SearchMovieListController.m in Sources */,
 				6AC7126120C5DCC500A7992D /* MovieDetailTableViewController.m in Sources */,
+				6AE2C74C20F40C5300B3A359 /* CinemaMoviesCollectionViewCell.m in Sources */,
+				6ACFD14120E51B6000F32255 /* Session.m in Sources */,
+				6AE2C76220F4EEAB00B3A359 /* CinemaSeatsViewController.m in Sources */,
 				6ACFD12320E269A600F32255 /* LGSideMenuController.m in Sources */,
 				6AC7128420CAB5F800A7992D /* PosterInImageGalleryCollectionViewCell.m in Sources */,
 				6AC712B920CF446900A7992D /* Review.m in Sources */,
+				6AE2C74620F40BDB00B3A359 /* CinemaListOfMoviesViewController.m in Sources */,
 				6AC712B220CF39EC00A7992D /* MovieCollectionViewCell.m in Sources */,
+				6ACFD13E20E511B000F32255 /* Rate.m in Sources */,
 				6ACFD13820E3A73200F32255 /* User.m in Sources */,
+				6AE2C75A20F4CE0200B3A359 /* ChooseTimeTableViewCell.m in Sources */,
 				6AC7127120C960EE00A7992D /* Genre.m in Sources */,
 				6AC7127A20C9E2C500A7992D /* CrewMember.m in Sources */,
 				6AC7127420C9D4F800A7992D /* Actor.m in Sources */,
@@ -611,6 +737,7 @@
 				6A3F3A2520AF8D3800FDC1A1 /* MovieListViewController.m in Sources */,
 				6AC7129B20CF361800A7992D /* OneReviewTableViewCell.m in Sources */,
 				6AC7127D20CAA7A100A7992D /* Image.m in Sources */,
+				6AE2C76820F4F14E00B3A359 /* CircleCollectionViewCell.m in Sources */,
 				6ACFD12920E2FD2600F32255 /* LeftSideViewController.m in Sources */,
 				6A9D666A20B1BC400025EEAD /* CustomCellCollectionViewCell.m in Sources */,
 				6ACFD12420E269A600F32255 /* LGSideMenuGesturesHandler.m in Sources */,
@@ -618,11 +745,13 @@
 				6ACFD12C20E3107900F32255 /* GalleryHeaderCollectionReusableView.m in Sources */,
 				6A78B67420B820E3006AFDF1 /* Movie.m in Sources */,
 				6AC712B620CF441700A7992D /* Reviews.m in Sources */,
+				6ACFD14B20E65A5A00F32255 /* ButtonTableViewCell.m in Sources */,
 				6AC712C520D12FCC00A7992D /* GalleryCollectionViewController.m in Sources */,
 				6A3F3A3320AF8D3800FDC1A1 /* main.m in Sources */,
 				6ACFD13B20E3C24100F32255 /* Authentication.m in Sources */,
 				6ACFD13520E3A4B000F32255 /* LoginViewController.m in Sources */,
 				6ACFD12120E269A600F32255 /* LGSideMenuView.m in Sources */,
+				6AE2C77620F8190100B3A359 /* ButtonBookNowTableViewCell.m in Sources */,
 				6AE4535D20C4B1EA00E50641 /* BasicMovieDetailCell.m in Sources */,
 				6ACFD12620E269A600F32255 /* LGSideMenuBorderView.m in Sources */,
 				6ACFD12520E269A600F32255 /* UIViewController+LGSideMenuController.m in Sources */,
@@ -631,12 +760,15 @@
 				6AF2C66220BEBCA2003C85CA /* SearchViewCell.m in Sources */,
 				6AC7126E20C69C1900A7992D /* MovieDetails.m in Sources */,
 				6AC7128020CAA85B00A7992D /* Images.m in Sources */,
+				6ACFD14720E64EF500F32255 /* CinemaMovieTableViewController.m in Sources */,
 				6AC7127720C9DCD900A7992D /* Credits.m in Sources */,
 				6ACFD12220E269A600F32255 /* LGSideMenuSegue.m in Sources */,
 				6A3F3A2220AF8D3800FDC1A1 /* AppDelegate.m in Sources */,
 				6AC712C120D103F900A7992D /* ActorsMovieCollectionViewCell.m in Sources */,
 				6AC712BD20CFD82200A7992D /* ActorDetailsTableViewController.m in Sources */,
 				6AC7128E20CABAB400A7992D /* CollectionTableViewCell.m in Sources */,
+				6AE2C75420F446DF00B3A359 /* PaymentInputsViewController.m in Sources */,
+				6AB5594920F85B1200B98289 /* SuccessfulPaymentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,7 +776,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AE2C76320F4EEAB00B3A359 /* CinemaSeatsViewController.m in Sources */,
+				6AE2C75520F446DF00B3A359 /* PaymentInputsViewController.m in Sources */,
 				6A3F3A3D20AF8D3800FDC1A1 /* pokusaj3Tests.m in Sources */,
+				6AE2C76920F4F14E00B3A359 /* CircleCollectionViewCell.m in Sources */,
+				6AE2C74D20F40C5300B3A359 /* CinemaMoviesCollectionViewCell.m in Sources */,
+				6AE2C77720F8190100B3A359 /* ButtonBookNowTableViewCell.m in Sources */,
+				6AE2C75B20F4CE0200B3A359 /* ChooseTimeTableViewCell.m in Sources */,
+				6AE2C74720F40BDB00B3A359 /* CinemaListOfMoviesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,7 +791,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AE2C76420F4EEAB00B3A359 /* CinemaSeatsViewController.m in Sources */,
+				6AE2C75620F446DF00B3A359 /* PaymentInputsViewController.m in Sources */,
 				6A3F3A4820AF8D3900FDC1A1 /* pokusaj3UITests.m in Sources */,
+				6AE2C76A20F4F14E00B3A359 /* CircleCollectionViewCell.m in Sources */,
+				6AE2C74E20F40C5300B3A359 /* CinemaMoviesCollectionViewCell.m in Sources */,
+				6AE2C77820F8190100B3A359 /* ButtonBookNowTableViewCell.m in Sources */,
+				6AE2C75C20F4CE0200B3A359 /* ChooseTimeTableViewCell.m in Sources */,
+				6AE2C74820F40BDB00B3A359 /* CinemaListOfMoviesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

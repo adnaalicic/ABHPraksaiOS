@@ -21,6 +21,8 @@
 #include "Review.h"
 #include "Reviews.h"
 #include "Authentication.h"
+#import "Rate.h"
+#import "Session.h"
 
 @interface TMDbClass : NSObject
 @property (strong, nonatomic) NSArray *movies;
@@ -41,5 +43,7 @@
 -(void) getActor:(NSString *) actorId withSuccess:(void (^)(NSArray *array))completionHandler;
 -(void) getActorsMovies:(NSString *) actorId withSuccess:(void (^)(NSArray *array))completionHandler;
 -(void) getTokenWithSuccess:(void (^)(NSArray *array))completionHandler;
+-(void) getSession:(NSString *)token andUsername:(NSString *)username andPassword:(NSString *)password withSuccess:(void (^)(NSArray *array))completionHandler;
+
 
 @end

@@ -26,6 +26,7 @@
                                  @"playsinline" : @1,
                                  };
     [self.playerView loadWithVideoId:@"M7lc1UVf-VE" playerVars:playerVars];
+    
 }
 
 - (void)didReceiveMemoryWarning {

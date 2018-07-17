@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="96" id="KGk-i7-Jjw" customClass="ChooseTimeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="95.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="otc-cs-6rd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="707-br-p0c">
+                                <rect key="frame" x="24" y="19" width="110" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Back Chevron Copy 3" translatesAutoresizingMaskIntoConstraints="NO" id="e9K-ac-bqy">
+                                <rect key="frame" x="294" y="24" width="16" height="9"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="e9K-ac-bqy" secondAttribute="trailing" constant="10" id="09B-rN-I8f"/>
+                            <constraint firstItem="e9K-ac-bqy" firstAttribute="top" secondItem="otc-cs-6rd" secondAttribute="top" constant="24" id="HmO-wV-eG3"/>
+                            <constraint firstItem="707-br-p0c" firstAttribute="top" secondItem="otc-cs-6rd" secondAttribute="top" constant="19" id="ILA-uu-ukr"/>
+                            <constraint firstItem="707-br-p0c" firstAttribute="leading" secondItem="otc-cs-6rd" secondAttribute="leading" constant="24" id="OwO-Fk-Sv0"/>
+                            <constraint firstAttribute="height" constant="58" id="xa9-qp-fap"/>
+                        </constraints>
+                    </view>
+                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4KF-P9-bOY">
+                        <rect key="frame" x="0.0" y="59" width="320" height="32"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.79860009519999997" green="0.79860009519999997" blue="0.79860009519999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </pickerView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="4KF-P9-bOY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="43b-iW-se9"/>
+                    <constraint firstItem="otc-cs-6rd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="DIy-Ta-Yxn"/>
+                    <constraint firstAttribute="bottom" secondItem="4KF-P9-bOY" secondAttribute="bottom" constant="4.5" id="DrC-ro-oos"/>
+                    <constraint firstItem="4KF-P9-bOY" firstAttribute="top" secondItem="otc-cs-6rd" secondAttribute="bottom" constant="1" id="Eaf-Ky-HK0"/>
+                    <constraint firstAttribute="trailing" secondItem="4KF-P9-bOY" secondAttribute="trailing" id="Qde-1V-rd5"/>
+                    <constraint firstAttribute="trailing" secondItem="otc-cs-6rd" secondAttribute="trailing" id="p9n-hy-bp2"/>
+                    <constraint firstItem="otc-cs-6rd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yGv-mc-BcJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="pickerView" destination="4KF-P9-bOY" id="PMu-qo-hgg"/>
+                <outlet property="titleLabel" destination="707-br-p0c" id="tCP-wi-3Rk"/>
+                <outlet property="titleView" destination="otc-cs-6rd" id="2dv-HS-Fae"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="123"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Back Chevron Copy 3" width="16" height="9"/>
+    </resources>
+</document>

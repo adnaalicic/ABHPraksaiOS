@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ButtonTableViewCell.h"
+#import "CinemaListOfMoviesViewController.h"
 
-@interface LeftSideViewController : UIViewController
+@protocol LeftSideViewControllerDelegate <NSObject>
+-(void)cinemaClicked;
+@end
 
+@interface LeftSideViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, ButtonTableViewCellDelegate>
+@property BOOL isSignedIn;
+@property (weak, nonatomic) id<LeftSideViewControllerDelegate>delegate;
+-(void)setUpDelegate:(id<LeftSideViewControllerDelegate>)delegate;
 @end

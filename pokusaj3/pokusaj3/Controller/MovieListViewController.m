@@ -15,8 +15,11 @@
 #import "TMDbClass.h"
 #import "LGSideMenuController/LGSideMenuController.h"
 #import "LGSideMenuController/UIViewController+LGSideMenuController.h"
+@import Firebase;
+
 
 @interface MovieListViewController ()
+@property (nonatomic, readwrite) FIRFirestore *db;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (nonatomic) NSArray *movieList;
 @property (nonatomic) BOOL *searching;
@@ -29,6 +32,9 @@
 @property (nonatomic, strong) NSMutableArray *listOfGenres;
 @property (nonatomic) NSMutableArray *extendedMovieList;
 @property int numberOfOption;
+@property (weak, nonatomic) IBOutlet UIImageView *checkedMostPopular;
+@property (weak, nonatomic) IBOutlet UIImageView *checkedLatest;
+@property (weak, nonatomic) IBOutlet UIImageView *checkedHighrated;
 @property int page;
 @end
 
@@ -37,6 +43,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    self.db = [FIRFirestore firestore];
+    
+    FIRCollectionReference *moviesRef = [self.db collectionWithPath:@"movies"];
+    
+//    [[self.db collectionWithPath:@"movies"]
+//     getDocumentsWithCompletion:^(FIRQuerySnapshot * _Nullable snapshot,
+//                                  NSError * _Nullable error) {
+//         if (error != nil) {
+//             NSLog(@"Error getting documents: %@", error);
+//         } else {
+//             for (FIRDocumentSnapshot *document in snapshot.documents) {
+//                 NSLog(@"%@ => %@", document.documentID, document.data);
+//                 MovieDetails *m =[[MovieDetails alloc]init];
+//                 MovieDetails *m1 = [m setUpWithDictionary:document.data];
+//
+//             }
+//         }
+//     }];
+    
     self.listOfGenres = [[NSMutableArray alloc] init];
     self.extendedMovieList = [[NSMutableArray alloc] init];
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Rectangle 677"]];
@@ -58,14 +83,28 @@
         [self.collectionView reloadData];
         for(int i = 0; i < self.movieList.count; i++){
             MovieDetails *tmp = self.movieList[i];
-
+            
             
             [tmbdClass getMovieDetails:tmp.movieId withSuccess:^(NSArray *array) {
                 MovieDetails *m = array[0];
                 if(m.genresList.count){
                     Genre *g = m.genresList[0];
-                    [self.listOfGenres addObject:g.name];}
+                    [self.listOfGenres addObject:g.name];
+                    
+//                    [[moviesRef documentWithPath:m.title] setData:@{
+//                                                                             @"title":m.title,
+//                                                                             @"id": m.movieId,
+//                                                                             @"runtime": m.movieLength,
+//                                                                             @"backdrop_path": m.backdrop,
+//                                                                             @"overview": m.shortDescription,
+//                                                                             @"vote_average": m.voteAverageString,
+//                                                                             @"release_date": m.releaseDate,
+//                                                                             @"poster_path": m.posterPath
+//                                                                             }];
+                }
+                
             }];
+            
         }
     }withPage:self.page];
     
@@ -77,7 +116,9 @@
     self.textField.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
     
     self.numberOfOption = 0;
-
+    [self.checkedLatest setHidden:YES];
+    [self.checkedHighrated setHidden:YES];
+    [self.checkedMostPopular setHidden:NO];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -166,6 +207,7 @@
                 [self.sortedByButton setImage:[UIImage imageNamed:@"Back Chevron Copy 3.pgn"] forState:UIControlStateNormal];
                 [self.optionsForSortingView setHidden: !self.optionsForSortingView.isHidden];
                 
+                
             }
             if(self.numberOfOption != 0){
                 [tmbdClass getListOfPopularMoviesWithSuccess:^(NSArray *array) {
@@ -185,6 +227,9 @@
                 } withPage:self.page];
             }
             self.numberOfOption = 0;
+            [self.checkedLatest setHidden:YES];
+            [self.checkedHighrated setHidden:YES];
+            [self.checkedMostPopular setHidden:NO];
             break;
         case 1:
             //Latest button clicked
@@ -222,6 +267,9 @@
             }
             
             self.numberOfOption = 1;
+            [self.checkedLatest setHidden:NO];
+            [self.checkedHighrated setHidden:YES];
+            [self.checkedMostPopular setHidden:YES];
             break;
         case 2:
             //Highest-rated button clicked
@@ -259,6 +307,9 @@
                 }];
             }
             self.numberOfOption = 2;
+            [self.checkedLatest setHidden:YES];
+            [self.checkedHighrated setHidden:NO];
+            [self.checkedMostPopular setHidden:YES];
             break;
         case 3:
             //Sorted by button clicked
@@ -315,5 +366,8 @@
 }
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     
+}
+- (IBAction)barButtonClicked:(id)sender {
+    NSLog(@"");
 }
 @end

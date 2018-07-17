@@ -70,16 +70,9 @@
                         </constraints>
                         <state key="normal" title="Button" image="like"/>
                     </button>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FvQ-gQ-Q28">
-                        <rect key="frame" x="20" y="266.5" width="300" height="1"/>
-                        <color key="backgroundColor" red="0.99942404029999998" green="0.86079591150000001" blue="0.016308854080000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="1" id="ESO-ju-m1O"/>
-                        </constraints>
-                    </imageView>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovP-FL-yle">
-                        <rect key="frame" x="118" y="95" width="73" height="30"/>
-                        <state key="normal" title="Play trailer">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovP-FL-yle">
+                        <rect key="frame" x="118" y="95" width="73" height="45"/>
+                        <state key="normal" image="play_yellow_icon">
                             <color key="titleColor" red="0.99942404029999998" green="0.86079591150000001" blue="0.016308854080000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </state>
                         <connections>
@@ -99,17 +92,14 @@
                     <constraint firstItem="k0Y-zj-pTf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="RzX-qi-W3U"/>
                     <constraint firstItem="ovP-FL-yle" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="102" id="Tvm-fQ-wXN"/>
                     <constraint firstAttribute="trailing" secondItem="OGb-nm-tGi" secondAttribute="trailing" constant="19" id="YPP-8d-jQx"/>
-                    <constraint firstAttribute="bottom" secondItem="FvQ-gQ-Q28" secondAttribute="bottom" constant="2" id="Zjr-a2-Xk7"/>
-                    <constraint firstItem="FvQ-gQ-Q28" firstAttribute="top" secondItem="BKc-2K-r8l" secondAttribute="bottom" constant="30" id="a8n-O8-e9d"/>
                     <constraint firstItem="BKc-2K-r8l" firstAttribute="top" secondItem="V2r-vK-R0F" secondAttribute="bottom" constant="3" id="bfm-lS-Dpd"/>
                     <constraint firstAttribute="trailingMargin" secondItem="ovP-FL-yle" secondAttribute="trailing" constant="113" id="c2f-lR-1lF"/>
                     <constraint firstItem="BKc-2K-r8l" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="cVW-d5-UVr"/>
-                    <constraint firstAttribute="trailing" secondItem="FvQ-gQ-Q28" secondAttribute="trailing" id="cXP-O7-NEb"/>
                     <constraint firstItem="V2r-vK-R0F" firstAttribute="top" secondItem="YCO-Ma-JJY" secondAttribute="bottom" constant="3" id="cb4-iu-JJD"/>
                     <constraint firstItem="BeV-90-2Uh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dG5-ld-6Tt"/>
                     <constraint firstAttribute="bottom" secondItem="4v6-eQ-8O2" secondAttribute="bottom" constant="79" id="f8I-Ki-qg2"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="BKc-2K-r8l" secondAttribute="bottom" constant="22.5" id="ktX-iw-hNj"/>
                     <constraint firstItem="OGb-nm-tGi" firstAttribute="leading" secondItem="4v6-eQ-8O2" secondAttribute="trailing" constant="8" id="nwx-gm-KPF"/>
-                    <constraint firstItem="FvQ-gQ-Q28" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="vYm-v8-UCB"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
@@ -127,5 +117,6 @@
     <resources>
         <image name="bookmark-black-tool-symbol copy" width="12" height="15"/>
         <image name="like" width="16" height="14"/>
+        <image name="play_yellow_icon" width="45" height="45"/>
     </resources>
 </document>

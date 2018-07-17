@@ -12,6 +12,7 @@
 #import "Authentication.h"
 #import "MovieListViewController.h"
 
+
 @interface LoginViewController : UIViewController
 @property (nonatomic, strong) IBOutlet UITextField *emailTextField;
 @property (nonatomic, strong) IBOutlet UITextField *passwordTextField;

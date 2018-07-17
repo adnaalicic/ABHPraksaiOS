@@ -83,4 +83,18 @@
     }
     return @" ";
 }
+
+- (MovieDetails *)setUpWithDictionary:(NSDictionary *)dictionary{
+    MovieDetails *movie = [[MovieDetails alloc]init];
+    movie.movieId = [dictionary objectForKey:@"id"];
+    movie.shortDescription = [dictionary objectForKey:@"overview"];
+    movie.posterPath = [dictionary objectForKey:@"poster_path"];
+    movie.backdrop = [dictionary objectForKey:@"backdrop_path"];
+    movie.releaseDate = [dictionary objectForKey:@"release_date"];
+    movie.title = [dictionary objectForKey:@"title"];
+    movie.movieLength = [dictionary objectForKey:@"runtime"];
+    movie.voteAverage = [[dictionary objectForKey:@"vote_average"] floatValue];
+    movie.genresList = [dictionary objectForKey:@"genres"];
+    return movie;
+}
 @end

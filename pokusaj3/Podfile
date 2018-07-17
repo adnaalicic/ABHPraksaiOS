@@ -2,7 +2,9 @@ target "pokusaj3" do
 	platform :ios, '7.0'
 	# Or platform :osx, '10.7'
 	pod 'RestKit', '~> 0.24.0'
-    pod 'SDWebImage', '~> 4.0'
-    pod 'youtube-ios-player-helper', '~> 0.1.4'
+    	pod 'SDWebImage', '~> 4.0'
+    	pod 'youtube-ios-player-helper', '~> 0.1.4'
+    	pod 'Firebase/Core'
+    	pod 'Firebase/Firestore'
 
 end
